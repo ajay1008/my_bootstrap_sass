@@ -1,0 +1,38 @@
+/*!
+ * Kalakaar All Generic Layout
+ * By Ajay.R
+ * 
+*/
+/*Generic*/
+html,
+body {
+    @extend .exo-medium;
+	height: 100%;
+    padding: 0 !important;
+	font-size:14px;
+}
+
+h1{
+	@extend .exo-medium;
+	font-size:30px;
+	color:$bold_text;
+}
+h2{
+	@extend .exo-medium;
+	font-size:26px;
+	color:$bold_text;
+}
+h3{
+	@extend .exo-light;
+	font-size:22px;
+	color:$light_text;
+}
+h4{
+	font-size:20px;
+}
+p{
+	font-size:15px;
+}
+blockquote{
+	font-size:15px;
+}

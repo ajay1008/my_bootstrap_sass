@@ -1,0 +1,168 @@
+/********************************************************************************/
+/*								 	Buttons 									*/
+/********************************************************************************/
+.btn{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	text-transform: uppercase;
+	outline: none;
+/*	background-image: none;*/
+	@include border-radius(4px);
+}
+.btn_big{
+	padding: 12px 10pc;
+	font-weight: 600;
+    font-size: 15px;
+	@media (min-width: 768px) and (max-width: 1499px){
+		padding: 12px 6pc;
+	}
+	@media(max-width: 767px){
+		padding: 12px 4pc;
+	}
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus {
+    outline: none;
+    outline-offset: -2px;
+}
+.dark-btn{
+	border: 1px solid $bor_dark;
+	button.btn{
+		margin: 0;		
+		border: 1px solid $bor_dark;		
+		&:hover, &:focus, &:active{			
+			border: 1px solid $bor_dark;			
+		}	
+	}
+	p{
+		margin-bottom: 0;
+	}
+}
+.light-btn{
+	border: 1px solid $bor_dark;
+	color: $blue;
+	background-color:$white;
+	margin: 0;			
+	&:hover, &:focus, &:active{			
+		border: 1px solid $bor_dark;
+		color: $white;
+		background-color: $blue;
+		font-weight: 400;
+	}
+
+	p{
+		margin-bottom: 0;
+	}	
+}
+.blue-btn{
+	border: 1px solid $bor_blue;
+	button.btn{
+		margin: 0;		
+		border: 1px solid $bor_blue;		
+		&:hover, &:focus, &:active{			
+			border: 1px solid $bor_blue;
+		}
+	}
+	p{
+		margin-bottom: 0;
+	}	
+}
+.yellow-btn{
+	color: $white;
+	background-color: $yellow;
+	margin: 0;			
+	&:hover, &:focus, &:active{	
+		font-weight: 400;
+		color: $blue;
+		/*background-color: $white;
+		border: 1px solid $bor_blue;*/
+	}
+	
+	p{
+		margin-bottom: 0;
+	}	
+}
+
+
+.dark-button.btn{
+	margin: 0 0 1px 1px;	
+	border: 1px solid $bor_dark;
+	box-shadow: 0 0 0 1px  $bor_dark;	
+	color: $white;
+	&:hover, &:focus, &:active{
+		color: $white;
+		box-shadow: 0 0 0 1px  $bor_dark;		
+	}			
+	p{
+		margin-bottom: 0;
+	}
+}
+.light-button.btn{
+	margin: 0 0 1px 1px;
+	border: 1px solid $bor_light;
+	box-shadow: 0 0 0 1px $bor_light;
+	color: $white;
+	&:hover, &:focus, &:active{
+		box-shadow: 0 0 0 1px $bor_light;
+	}
+	p{
+		margin-bottom: 0;
+	}
+}
+.blue-button.btn{
+	margin: 0 0 1px 1px; 
+	border: 1px solid $bor_blue;
+	box-shadow: 0 0 0 1px $bor_blue;
+	color: $white;
+	&:hover, &:focus, &:active{
+		box-shadow: 0 0 0 1px $bor_blue;
+		color: $white;
+	}
+	p{
+		margin-bottom: 0;
+	}
+}
+.no-rl-padding{
+	padding-left: 5px;
+	padding-right: 5px;
+	@include extralgto4k{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+@media(max-width: 3900px) and (min-width: 2150px) {
+	.btn{
+		font-size: 20px;
+	}
+}
+@media (max-width: 991px) and (min-width: 767px){
+	.less-padding{
+		padding: 6px 10px !important;
+	}
+}
+/*
+@media(max-width: 767px){
+	.btn{
+		padding: 6px 12px;
+		font-size: 11px;
+		margin-bottom: 5px;
+	}
+	.dark-button,.light-button,.blue-button{
+		&.btn{
+			margin-bottom: 5px;
+			padding:3px;
+		}
+	}
+}
+*/
